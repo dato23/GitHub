@@ -1,0 +1,50 @@
+$colors: (
+  primary: #45a29e,
+  primary-light: #66fcf1,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+} 
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(color(primary), 0.5),
+      rgba(color(primary-light), 0.5)
+    ),
+   url(img/headphones-bg.jpg)
+  background-size: cover;
+  position: relative;
+}
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.header-primary {
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+}
+.header-primary-main {
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-primary-sub {
+  font-size: 4rem;
+}

@@ -1,0 +1,37 @@
+//Measurements  px = Monkey, rem AKA relative unit 1REM = 10px, vw = viewport width vh = viewport height
+
+$colors: (
+  primary: #45a29e,
+  primary-light: #66fcf1,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.header {
+  font-size: 5rem;
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  flex-direction: center;
+}
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.header-primary-main {
+  display: block;
+}
+.header-primary-sub {
+  display: block;
+}

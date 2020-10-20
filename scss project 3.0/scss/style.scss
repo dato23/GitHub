@@ -1,0 +1,38 @@
+html,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+body {
+  background-color:: rgb(204, 151, 53); ;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.box1header{
+    font-size: 12rem;
+    white-space: nowrap;
+    align-content: center;
+
+}
+
+.box1{
+    background-color: rgb(21, 102, 102);
+    border: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,4 +1,4 @@
-html,
+
 body {
   margin: 20;
   padding: 40;
@@ -18,10 +18,6 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
 }
-.header {
-  font-style: ;
-}
-
 .box {
   height: 10vh;
   width: 25vw;
